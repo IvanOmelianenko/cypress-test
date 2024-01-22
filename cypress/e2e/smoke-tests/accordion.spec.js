@@ -2,7 +2,7 @@
 
 describe("Accordion text test", () => {});
 
-it("Verify accordion text", () => {
+it("Verify accordion text after opening", () => {
   cy.visit("/pages/layout/accordion");
   cy.get("nb-card-body button").click();
   cy.get(".item-body").first().should("include.text", "A nebula");

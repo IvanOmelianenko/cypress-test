@@ -7,7 +7,7 @@ const colors = {
   Corporate: "rgb(255, 255, 255)",
 };
 
-describe("Color changing tests", () => {
+describe("Color changing tests for each theme", () => {
   beforeEach(() => {
     cy.visit("/");
   });

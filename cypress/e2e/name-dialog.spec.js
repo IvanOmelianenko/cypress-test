@@ -7,6 +7,5 @@ it("Verify name after submit dialog", () => {
   cy.get(".result-from-dialog button").click();
   cy.get("input[placeholder='Name']").type("Ivan");
   cy.get("button[status='success']").click();
-  //   cy.get("ul li.ng-star-inserted").eq(23).should("have.text", "Ivan");
   cy.get("h3 + ul li.ng-star-inserted").should("have.text", "Ivan");
 });
